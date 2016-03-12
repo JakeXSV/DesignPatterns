@@ -1,14 +1,14 @@
-﻿namespace DesignPatterns.AbstractFactory.Factories
+﻿namespace AbstractFactory.Factories
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using DesignPatterns.AbstractFactory.Models.Sedan;
-    using DesignPatterns.AbstractFactory.Models.Sportscar;
-    using DesignPatterns.AbstractFactory.Models.SUV;
-    using DesignPatterns.AbstractFactory.Models.Truck;
+    using Models.Sedan;
+    using Models.Sportscar;
+    using Models.SUV;
+    using Models.Truck;
 
     public class PorscheFactory : AbstractManufacturerFactory
     {

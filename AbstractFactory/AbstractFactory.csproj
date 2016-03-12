@@ -7,8 +7,8 @@
     <ProjectGuid>{FF01EE8F-4937-4A27-9EE2-3E2EB4112536}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPatterns</RootNamespace>
-    <AssemblyName>DesignPatterns</AssemblyName>
+    <RootNamespace>AbstractFactory</RootNamespace>
+    <AssemblyName>AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory\Enums\AutomobileDrivetrain.cs" />
-    <Compile Include="AbstractFactory\Enums\AutomobileTransmissions.cs" />
-    <Compile Include="AbstractFactory\Factories\AbstractManufacturerFactory.cs" />
-    <Compile Include="AbstractFactory\Factories\MaseratiFactory.cs" />
-    <Compile Include="AbstractFactory\Factories\PorscheFactory.cs" />
-    <Compile Include="AbstractFactory\Models\AbstractAutomobile.cs" />
-    <Compile Include="AbstractFactory\Models\Sedan\AbstractSedan.cs" />
-    <Compile Include="AbstractFactory\Models\Sportscar\AbstractSportscar.cs" />
-    <Compile Include="AbstractFactory\Models\Supercar\AbstractSupercar.cs" />
-    <Compile Include="AbstractFactory\Models\SUV\AbstractSUV.cs" />
-    <Compile Include="AbstractFactory\Models\Truck\AbstractTruck.cs" />
+    <Compile Include="Enums\AutomobileDrivetrain.cs" />
+    <Compile Include="Enums\AutomobileTransmissions.cs" />
+    <Compile Include="Factories\AbstractManufacturerFactory.cs" />
+    <Compile Include="Factories\MaseratiFactory.cs" />
+    <Compile Include="Factories\PorscheFactory.cs" />
+    <Compile Include="Models\AbstractAutomobile.cs" />
+    <Compile Include="Models\Sedan\AbstractSedan.cs" />
+    <Compile Include="Models\Sportscar\AbstractSportscar.cs" />
+    <Compile Include="Models\Supercar\AbstractSupercar.cs" />
+    <Compile Include="Models\SUV\AbstractSUV.cs" />
+    <Compile Include="Models\Truck\AbstractTruck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

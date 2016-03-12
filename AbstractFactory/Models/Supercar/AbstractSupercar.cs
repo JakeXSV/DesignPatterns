@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.AbstractFactory.Models.Supercar
+﻿namespace AbstractFactory.Models.Supercar
 {
     public abstract class AbstractSupercar : AbstractAutomobile
     {

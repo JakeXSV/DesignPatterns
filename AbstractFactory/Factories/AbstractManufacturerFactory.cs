@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.AbstractFactory.Factories
+﻿namespace AbstractFactory.Factories
 {
     using Models.Sedan;
     using Models.Sportscar;

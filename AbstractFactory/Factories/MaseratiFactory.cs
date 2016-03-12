@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.AbstractFactory.Factories
+﻿namespace AbstractFactory.Factories
 {
     using System;
     using System.Collections.Generic;

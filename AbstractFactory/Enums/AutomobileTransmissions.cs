@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.AbstractFactory.Enums
+﻿namespace AbstractFactory.Enums
 {
     public enum AutomobileTransmissions
     {
