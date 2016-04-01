@@ -5,31 +5,35 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Models.Supercar;
     using Models.Sedan;
     using Models.Sportscar;
-    using Models.SUV;
-    using Models.Truck;
 
     public class MaseratiFactory : AbstractManufacturerFactory
     {
+        private const string MaseratiStyle = "Luxury With $10000 repair bill";
+
+        public override string Style
+        {
+            get
+            {
+                return MaseratiStyle;
+            }
+        }
+
         public override AbstractSedan GetSedan()
         {
-            throw new NotImplementedException();
+            return new Ghibli();
         }
 
         public override AbstractSportscar GetSportscar()
         {
-            throw new NotImplementedException();
+            return new GranTurismo();
         }
 
-        public override AbstractSUV GetSUV()
+        public override AbstractSupercar GetSupercar()
         {
-            throw new NotImplementedException();
-        }
-
-        public override AbstractTruck GetTruck()
-        {
-            throw new NotImplementedException();
+            return new TheMC12();
         }
     }
 }

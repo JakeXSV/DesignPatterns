@@ -7,29 +7,33 @@
     using System.Threading.Tasks;
     using Models.Sedan;
     using Models.Sportscar;
-    using Models.SUV;
-    using Models.Truck;
+    using Models.Supercar;
 
     public class PorscheFactory : AbstractManufacturerFactory
     {
+        private const string PorscheStyle = "Luxury Sport";
+
+        public override string Style
+        {
+            get
+            {
+                return PorscheStyle;
+            }
+        }
+
         public override AbstractSedan GetSedan()
         {
-            throw new NotImplementedException();
+            return new Panamera();
         }
 
         public override AbstractSportscar GetSportscar()
         {
-            throw new NotImplementedException();
+            return new Cayman();
         }
 
-        public override AbstractSUV GetSUV()
+        public override AbstractSupercar GetSupercar()
         {
-            throw new NotImplementedException();
-        }
-
-        public override AbstractTruck GetTruck()
-        {
-            throw new NotImplementedException();
+            return new The918();
         }
     }
 }

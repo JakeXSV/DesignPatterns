@@ -2,14 +2,19 @@
 {
     using Models.Sedan;
     using Models.Sportscar;
-    using Models.SUV;
-    using Models.Truck;
+    using Models.Supercar;
 
     public abstract class AbstractManufacturerFactory
     {
+        public abstract string Style { get; }
+
+        public string GetStyle()
+        {
+            return Style;
+        }
+
         public abstract AbstractSedan GetSedan();
         public abstract AbstractSportscar GetSportscar();
-        public abstract AbstractSUV GetSUV();
-        public abstract AbstractTruck GetTruck();
+        public abstract AbstractSupercar GetSupercar();
     }
 }
