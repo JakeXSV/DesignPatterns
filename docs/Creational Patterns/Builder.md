@@ -5,17 +5,13 @@
 ### Structure
 ![My image](./BuilderStructure.png)
 
-### Participants
-* Abstract Builder
-* Concrete Builders
-* Director - class using the builder
-* Product
-
 ### System example
 ![My image](./BuilderConfiguration.png)
 
 ### When To Use
-
+* A system should be independent of how its products are created, composed and represented
+* A system should be configured with one of multiple families of products
+* A family of related product objects is designed to be used together and you need to enforce this constraint
 
 ### Pros
 * Finer control over construction process
