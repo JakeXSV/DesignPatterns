@@ -6,11 +6,21 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public class EnglishTranslator : AbstractTranslator
+    public class EnglishTranslator : ATranslator
     {
-        public override string GetWord(string word)
+        public override void TranslateWord(string word)
         {
-            return "english translation";
+            this.Translation.TranslatedWord = "english " + word;
+        }
+
+        public override void SetSpeechDifficulty()
+        {
+            this.Translation.SpeechDifficulty = 5;
+        }
+
+        public override void SetSpeechVelocity()
+        {
+            this.Translation.SpeechVelocity = 15;
         }
     }
 }

@@ -1,24 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Builder
+﻿namespace Builder
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     // Director
     public class MultiLanguageTranslator
     {
-        private AbstractTranslator Translator { get; set; }
+        private ATranslator Translator { get; set; }
 
-        public MultiLanguageTranslator(AbstractTranslator translator)
+        public MultiLanguageTranslator(ATranslator translator)
         {
-            Translator = translator;
+            this.Translator = translator;
         }
 
-        public string TranslateWord(string word)
+        public void Translate(string word)
         {
-            return Translator.GetWord(word);
+            this.Translator.Translation = new TranslationResult();
+            this.Translator.TranslateWord(word);
+            this.Translator.SetSpeechDifficulty();
+            this.Translator.SetSpeechVelocity();
         }
     }
 }

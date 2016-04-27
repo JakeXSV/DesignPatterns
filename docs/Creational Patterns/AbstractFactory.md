@@ -5,6 +5,9 @@
 ### Structure
 ![My image](./AbstractFactoryStructure.png)
 
+### Example
+![My image](./AbstractFactoryExample.png)
+
 ### Participants
 * AbstractFactory
 * Concrete Factories
